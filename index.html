@@ -34,11 +34,25 @@
       }
       .pattern {
         display: flex;
+        flex-direction: column;
         height: 532px;
         background-image: url(https://mario-design.s3.us-east-2.amazonaws.com/pattern-2.png);
         background-position: center;
         background-size: 85%;
         background-repeat: no-repeat;
+      }
+      .content-title {
+        font-family: Montserrat;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 80px 85px 10px 25px;
+      }
+      .content {
+        font-family: Montserrat;
+        color: white;
+        font-size: 48px;
+        margin: 30px 85px 40px 25px;
       }
       .bottom {
         display: flex;
@@ -73,7 +87,7 @@
         .main {
           height: 100%;
           max-width: 700px;
-          background-color: white;
+          background-color: #22a1dc;
           margin: auto;
         }
         .header {
@@ -94,7 +108,15 @@
             src="https://mario-design.s3.us-east-2.amazonaws.com/logo-boto.png"
           />
         </div>
-        <div class="pattern"></div>
+        <div class="pattern">
+          <p class="content-title">
+            TÍTULO DA NOTÍCIA
+          </p>
+          <p class="content">
+            – Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit
+            amet tortor a magna elementum pulvinar.
+          </p>
+        </div>
         <div class="bottom">
           <div class="contact">
             <p class="contact-title">Entre em contato</p>
